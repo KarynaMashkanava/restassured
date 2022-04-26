@@ -38,7 +38,7 @@ public class LoginUnsuccessfullTest extends BaseTest {
     public Object[][] getUserData() {
         return new Object[][] {
                 {UserRegisterModel.builder().email("eve.holt@reqres.in").build(), "Missing password"},
-                {UserRegisterModel.builder().email("eve.holt@reqres.in").password("Test234!").build(), "Missing password"}, //bug here? pushed changes
+                {UserRegisterModel.builder().email("eve.holt@reqres.in").password("Test234!").build(), "Missing password"}, //bug here?
                 {UserRegisterModel.builder().email("ev.holt@reqres.in").password("Test1234!").build(), "user not found"},
                 {UserRegisterModel.builder().password("Test1234!").build(), "Missing email or username"}
         };
